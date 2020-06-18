@@ -1,0 +1,97 @@
+1.Question 1
+DBA stands for
+
+ANS:	Data Base Administrator
+
+
+2.Question 2
+Structured Query Language (SQL) is used to (check all that apply)
+
+ANS:	--> Insert data
+
+	--> Delete data
+
+	--> Create a table
+
+
+
+3.Question 3
+Which statement is the right syntax to make a new database using command line?
+
+ANS:	CREATE DATABASE people;
+
+
+4.Question 4
+"INSERT INTO" is the keyword used to insert data into tables.
+
+ANS:	True
+
+
+5.Question 5
+Which keyword is used to add conditions to your query?
+
+ANS:	WHERE
+
+
+6.Question 6
+Which command is used to retrieve all records from the table?
+
+ANS:	SELECT * FROM Users
+
+
+7.Question 7
+Which keyword will cause the results of the query to be displayed in sorted order?
+
+ANS:	ORDER BY
+
+
+8.Question 8
+The LIMIT clause helps to narrow down the scope of the query.
+
+ANS:	True
+
+
+9.Question 9
+A [_____] column allocates a string with a variable amount of space depending on the data length that is actually stored.
+
+ANS:	varchar
+
+
+10.Question 10
+A column of type CHAR cannot be indexed.
+
+ANS:	FALSE
+
+
+11.Question 11
+Images, PDF, movies cannot be stored in a database.
+
+ANS:	FALSE
+
+
+12.Question 12
+Column of type TIMESTAMP stores the number of seconds from January 1, [_____] in the column.
+
+ANS:	1970
+
+
+13.Question 13
+A primary key can be set to null.
+
+ANS:	FALSE
+
+
+14.Question 14
+An UNSIGNED int can be a negative number.
+
+ANS:	FALSE
+
+
+15.Question 15
+Primary keys are used to distinguish rows within in a table. [_____] keys are used to reference the primary key from a different table.
+
+ANS:	foreign
+
+
+
+

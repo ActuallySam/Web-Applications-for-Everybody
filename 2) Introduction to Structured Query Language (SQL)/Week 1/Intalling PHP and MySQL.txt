@@ -1,0 +1,4 @@
+This assignment of installing PHP and SQL has already been covered in the 1st Course of the Coursera's Specialization on 
+Web Applications for Everyone, in the Week 4 of Building Web Applications in PHP
+
+The link to it is:    https://github.com/ActuallySam/Building-Web-Applications-in-PHP-solutions/tree/master/Week%204%20-%20XAMPP

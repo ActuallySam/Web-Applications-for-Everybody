@@ -1,0 +1,15 @@
+Exploring the HyperText Transfer Protocol
+
+You are to retrieve the following document in a browser tab with "Developer Mode" enabled so you can examine the HTTP Response headers. You may need to open the URL in a new tab, turn on developer mode, and then press refresh to get the proper data.
+
+http://data.pr4e.org/intro-short.txt
+
+Last Modified:  Sat, 13 May 2017 11:22:22 GMT
+
+ETag:  "1d3-54f6609240717"
+
+Content-Length:  467
+
+Cache-Control:  max-age=0, no-cache, no-store, must-revalidate
+
+Content-Type:  text/plain

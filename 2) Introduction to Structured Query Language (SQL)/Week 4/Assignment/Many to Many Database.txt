@@ -1,0 +1,97 @@
+STEP 1:
+
+CREATE DATABASE roster
+DEFAULT CHARACTER SET utf8;
+USE roster;
+
+
+
+STEP 2:
+
+DROP TABLE IF EXISTS Member;
+DROP TABLE IF EXISTS `User`;
+DROP TABLE IF EXISTS Course;
+
+
+
+STEP 3:
+
+CREATE TABLE `User` (
+    user_id     INTEGER NOT NULL AUTO_INCREMENT,
+    name        VARCHAR(128) UNIQUE,
+    PRIMARY KEY(user_id)
+) ENGINE=InnoDB CHARACTER SET=utf8;
+
+
+
+STEP 4:	
+
+CREATE TABLE Course (
+    course_id     INTEGER NOT NULL AUTO_INCREMENT,
+    title         VARCHAR(128) UNIQUE,
+    PRIMARY KEY(course_id)
+) ENGINE=InnoDB CHARACTER SET=utf8;
+
+
+
+STEP 5:
+
+CREATE TABLE Member (
+    user_id       INTEGER,
+    course_id     INTEGER,
+    role          INTEGER,
+
+    CONSTRAINT FOREIGN KEY (user_id) REFERENCES `User` (user_id)
+      ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT FOREIGN KEY (course_id) REFERENCES Course (course_id)
+       ON DELETE CASCADE ON UPDATE CASCADE,
+
+    PRIMARY KEY (user_id, course_id)
+) ENGINE=InnoDB CHARACTER SET=utf8;
+
+
+
+STEP 6:
+
+Please refer to the Week 3 Assignment and understand the code to input the 15 people's data:
+
+(Name, Course, Member)
+
+Airlie, si106, Instructor
+Alleisha, si106, Learner
+Ander, si106, Learner
+Ayda, si106, Learner
+Valerie, si106, Learner
+Asiya, si110, Instructor
+Alishah, si110, Learner
+Daniela, si110, Learner
+Lucas, si110, Learner
+Tehya, si110, Learner
+Tanika, si206, Instructor
+Alyse, si206, Learner
+Deni, si206, Learner
+Shaunpaul, si206, Learner
+Zayn, si206, Learner
+
+
+
+STEP 7:    Checking purpose
+
+SELECT `User`.name, Course.title, Member.role
+    FROM `User` JOIN Member JOIN Course
+    ON `User`.user_id = Member.user_id AND Member.course_id = Course.course_id
+    ORDER BY Course.title, Member.role DESC, `User`.name
+
+
+
+STEP 8:
+
+When you have the data all inserted, use phpMyAdmin to Export the data as follows:
+
+Select the database (do not select a table within the database)
+Select the Export Tab
+Select "Custom - display all possible options"
+Select "Save output to a file"
+Set the format to JSON
+Do not select "pretty print" the output
+Leave everything else as default and run the export.

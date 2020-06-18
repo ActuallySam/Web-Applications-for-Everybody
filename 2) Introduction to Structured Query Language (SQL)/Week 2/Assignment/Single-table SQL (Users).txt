@@ -1,0 +1,30 @@
+STEP 1:
+
+CREATE DATABASE first;
+
+
+
+STEP 2:
+
+CREATE TABLE Ages ( 
+  name VARCHAR(128), 
+  age INTEGER
+)
+
+
+
+STEP 3: 
+
+DELETE FROM Ages;
+INSERT INTO Ages (name, age) VALUES ('Tee', 19);
+INSERT INTO Ages (name, age) VALUES ('Marta', 18);
+INSERT INTO Ages (name, age) VALUES ('Sidney', 34);
+INSERT INTO Ages (name, age) VALUES ('Irvine', 20);
+INSERT INTO Ages (name, age) VALUES ('Richie', 25);
+INSERT INTO Ages (name, age) VALUES ('Anona', 32);
+
+
+
+STEP 4:
+
+SELECT sha1(CONCAT(name,age)) AS X FROM Ages ORDER BY X

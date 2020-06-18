@@ -1,0 +1,1 @@
+SELECT track.title, artist.name, album.title FROM track INNER JOIN album ON album.album_id = track.album_id INNER JOIN artists ON artist.artist_id = album.artist_id WHERE artists.artistid = 1;
