@@ -1,0 +1,25 @@
+Step 1: 
+Open the Assignment Auto-Grader Tool
+
+Step 2:
+Open the Developers tool of your Browser
+
+Step 3:
+Reload the Auto-Grader Page again
+
+Step 4:
+Go to the Networks Tab on the Developers Tool Tab
+
+Step 5:
+Double Click on the Cookie named "?PHPSESSID=...."
+
+Step 6:
+In the "Headers" Tab, search for the title "Request Headers" and inside that; search for "cookie" property.
+That will be your Cookie Value
+
+Step 7:
+Click on the "Cookies Tab inside the same filename "?PHPSESSID=..."
+
+Step 8:
+Copy the 'Value' of the "wa4e_secret_cookie" .
+That will be your Session ID.
