@@ -1,0 +1,29 @@
+1.Question 1
+Why is it important to have extensive error checking on SQL statements when an application is in production?
+
+ANS:	All of the above
+
+
+2.Question 2
+What is the purpose of the PDO::errorinfo() data?
+
+ANS:	It gives extended detail when a PDO function returns an error
+
+
+3.Question 3
+How is a LEFT JOIN different from a regular JOIN?
+
+ANS:	In a LEFT JOIN rows are included from the left table even if there is no matching row in the right table
+
+
+4.Question 4
+What is a common use of GROUP BY in SQL?
+
+ANS:	When combined with the COUNT function, it provides a way to compute sub\-totals
+
+
+5.Question 5
+Why do subqueries have the potential to cause a query to execute slowly?
+
+ANS:	Because MySQL executes the subquery independently from the main query
+
