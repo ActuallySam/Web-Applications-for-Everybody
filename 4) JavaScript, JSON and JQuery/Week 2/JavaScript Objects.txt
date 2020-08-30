@@ -1,0 +1,35 @@
+1.
+Question 1
+Which of the following is a template that defines the shape of an object that is created?
+
+ANS:	Class
+
+
+2.
+Question 2
+Which of the following describes a feature which we would expect from a programming language that supported first class functions?
+
+ANS:	The ability to define a function and assign the function to a variable
+
+
+
+3.
+Question 3
+What is the keyword / predefined variable that is used in a JavaScript class definition to refer to the "current instance" of the class?
+
+ANS:	this
+
+
+4.
+Question 4
+What do these two statements in JavaScript accomplish?
+
+ANS:	These two statements accomplish the same thing
+
+
+5.
+Question 5
+How is the constructor defined in JavaScript class compared to how the constructor is defined in a PHP class?
+
+ANS:	A PHP constructor is a method named __construct() and a JavaScript constructor is code in the outer function definition
+
