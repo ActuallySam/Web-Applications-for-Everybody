@@ -1,0 +1,118 @@
+1.
+Question 1
+What is the purpose of the following JQuery ready() call?
+
+		$(document).ready(function(){
+ 			window.console && console.log('Hello JQuery..');
+		});
+
+ANS:	Register a function that will be called when the HTML document is completely loaded
+
+
+
+2.
+Question 2
+What portion of the DOM (Document Object Model) will be affected by the following JQuery statement:
+
+		$('#para').css('background-color', 'red');
+
+ANS:	A tag with an id attribute of "para"
+
+
+
+3.
+Question 3
+What does the following JQuery code do?
+
+		$('#spinner').toggle();
+
+
+ANS:	Hide or show the contents of a tag with the id attribute of "spinner"
+
+
+
+4.
+Question 4
+What will the following JQuery code select from the given HTML?
+
+		<p id="p">two
+  			<input type="text" name="one" value="three" title="four">
+  			<input type="text" name="five" class="p" value="p">
+		</p>
+		<script>
+			$('#p').find('input[name="one"]').val();
+		</script>
+
+
+ANS:	three
+
+
+
+5.
+Question 5
+Which of the following is not a primitive type supported in JSON?
+
+ANS:	url
+
+
+
+6.
+Question 6
+In the following JSON, how would you print the value "six"?
+
+		data = {'one':'two', 'three': 4,
+  			'five' : [ 'six', 'seven' ],
+  			'eight' : { 'nine' : 10, 'ten' : 11  }
+		}
+
+
+ANS:	alert(data.five[0])
+
+
+
+7.
+Question 7
+What would the following JavaScript print out?
+
+		data = {'one':'two', 'three': 4,
+  			'five' : [ 'six', 'seven' ],
+  			'eight' : { 'nine' : 10, 'ten' : 11  }
+		};
+		alert(data.eight.nine);
+
+ANS:	10
+
+
+
+8.
+Question 8
+In the following code, what would you expect in the variable named "data"?
+
+		$.getJSON('json.php', function(data) {
+    			$("#back").html(data.first);
+    			window.console && console.log(data);
+ 		});
+
+
+ANS:	Either a JavaScript object or list depending on the returned output of the script json.php
+
+
+
+9.
+Question 9
+Which of the following JQuery statements will hide spinner.gif in this HTML?
+
+		<div id="chatcontent">
+		<img src="spinner.gif" alt="Loading..."/>
+		</div>
+
+
+ANS:	$("#chatcontent").hide();
+
+
+
+10.
+Question 10
+What does the PHP function json_encode() do ?
+
+ANS:	Takes a PHP object or list and serializes it into a JSON string representation
